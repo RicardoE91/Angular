@@ -1,0 +1,18 @@
+<!-- <hr>
+<h1>PADRE</h1> -->
+<h2>Lista de Usuarios y Ciudad</h2>
+<h1>{{envio.planeta}}</h1>
+<br>
+<app-hijo 
+[nombre]="'Roger Federer'"
+[ciudad]="'Basilea'"
+(envio)="recibirDatos($event)"
+>
+</app-hijo>
+<br>
+<app-hijo 
+[nombre]="'Rafael Nadal'"
+[ciudad]="'Mallorca'"
+(envio)="recibirDatos($event)"
+>
+</app-hijo>

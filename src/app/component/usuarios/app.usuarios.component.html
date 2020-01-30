@@ -1,0 +1,14 @@
+<p>Listado de Usuarios</p>
+
+<table class="table">
+  <tbody>
+    <tr *ngFor="let usuario of usuarios; let i = index">
+      <td>{{i+1}}</td>
+      <td><img src="{{usuario.picture.thumbnail}}" alt="" /></td>
+      <td>{{usuario.name.title}}</td>
+      <td>{{usuario.name.first}}</td>
+      <td>{{usuario.name.last}}</td>
+      <td>{{usuario.location.country}}</td>
+    </tr>
+</tbody>
+</table>

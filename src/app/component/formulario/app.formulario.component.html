@@ -1,0 +1,50 @@
+<div style="text-align: center;">
+    <h1>Calculadora</h1>
+    <input 
+    type="number"
+    id="firstNumber"
+    placeholder="First Number"
+    class="form-control"
+    #primero
+    />
+    <input 
+    type="number"
+    id="secondNumber"
+    placeholder="Second Number"
+    class="form-control"
+    #second
+    />
+    <br>
+    <!-- <button type="submit" (click)="calculate(primero.value, second.value)">Calculadora</button>
+    <br>
+    <h4>Suma= {{sum}}</h4>
+    <h4>Resta= {{res}}</h4>
+    <h4>Multiplicacion= {{mul}}</h4>
+    <h4>Division= {{div}}</h4>
+    <br> -->
+    <div class="botones">
+        <div>
+        <button type="submit" (click)="suma(primero.value, second.value)">Suma</button>
+        <br>
+        <h4>{{sum2}}</h4>
+        </div>
+        <br>
+        <div>
+        <button type="submit" (click)="resta(primero.value, second.value)">Resta</button>
+        <br>
+        <h4>{{res2}}</h4>
+        </div>
+        <br>
+        <div>
+        <button type="submit" (click)="multiplicacion(primero.value, second.value)">Multiplicacion</button>
+        <br>
+        <h4>{{mul2}}</h4>
+        </div>
+        <br>
+        <div>
+        <button type="submit" (click)="division(primero.value, second.value)">Division</button>
+        <br>
+        <h4>{{div2}}</h4>
+        </div>
+    </div>
+</div>
