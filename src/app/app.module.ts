@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from "@angular/forms";
 
 import { AppComponent } from './app.component';
 import { FooterComponent } from './component/footer/app.footer.component';
@@ -16,13 +17,14 @@ import { UsuariosComponent } from './component/usuarios/app.usuarios.component';
 import { HijoComponent } from './component/hijo/app.hijo.component';
 import { PadreComponent } from './component/padre/app.padre.component';
 import { FormularioComponent } from './component/formulario/app.formulario.component';
+import { PerrosComponent } from './component/perros/app.perros.component';
 
 @NgModule({
   declarations: [
-    AppComponent, FooterComponent, NavbarComponent, PeliculaComponent, SerieComponent, VideojuegoComponent, VacioComponent, InicioComponent, UsuariosComponent, HijoComponent, PadreComponent, FormularioComponent
+    AppComponent, FooterComponent, NavbarComponent, PeliculaComponent, SerieComponent, VideojuegoComponent, VacioComponent, InicioComponent, UsuariosComponent, HijoComponent, PadreComponent, FormularioComponent, PerrosComponent
   ],
   imports: [
-    BrowserModule, routing, HttpClientModule
+    BrowserModule, routing, HttpClientModule, FormsModule
   ],
   providers: [appRoutingProviders, UsuarioService],
   bootstrap: [AppComponent]

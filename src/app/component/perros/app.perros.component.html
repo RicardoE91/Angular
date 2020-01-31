@@ -1,0 +1,26 @@
+<div class="formulario">
+    <h3>Captura Nuevo Perro</h3>
+    <form #formPerro="ngForm" (ngSubmit)="onSubmit()">
+        <p>
+                <label>Nombre</label>
+                <input type="text" #nombre="ngModel" name="nombre" [(ngModel)]="perro.nombre" class="form-control">
+        </p>
+        <p>
+                <label>Raza</label>
+                <input type="text" #nombre="ngModel" name="raza" [(ngModel)]="perro.raza" class="form-control">
+        </p>
+        <p>
+                <label>Tamaño</label>
+                <input type="text" #nombre="ngModel" name="tamano" [(ngModel)]="perro.tamano" class="form-control">
+        </p>
+        <p>
+                <label>Color</label>
+                <input type="text" #nombre="ngModel" name="color" [(ngModel)]="perro.color" class="form-control">
+        </p>
+        <p>
+            <label>Pais de Origen</label>
+            <input type="text" #nombre="ngModel" name="origen" [(ngModel)]="perro.origen" class="form-control">
+        </p>
+        <input type="submit" value="Guardar">
+    </form>
+</div>
